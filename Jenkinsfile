@@ -19,7 +19,7 @@ pipeline {
         python3 -m venv .venv
         . .venv/bin/activate
         pip install -q --upgrade pip
-        pip install -q -r requirements.txt
+        pip install -q -r requirement.txt
         python --version
         '''
       }
