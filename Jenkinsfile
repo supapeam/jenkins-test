@@ -54,7 +54,7 @@ pipeline {
 
     stage('Package') {
       steps {
-        sh 'tar -czf calc-${BUILD_NUMBER}.tar.gz src requirements.txt'
+        sh 'tar -czf calc-${BUILD_NUMBER}.tar.gz src requirement.txt'
         archiveArtifacts artifacts: '*.tar.gz', fingerprint: true
       }
     }
